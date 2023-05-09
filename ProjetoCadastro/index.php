@@ -11,6 +11,7 @@
     <ul>
         <li><a href="cadastro_usuario.html">Cadastrar</a></li>
         <li><a href="cadastro_usuario.php">Listar</a></li>
+        <li><a href="altera.php">Alterar</a></li>
     </ul>
 </body>
 </html>

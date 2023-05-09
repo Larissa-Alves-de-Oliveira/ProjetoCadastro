@@ -11,4 +11,5 @@
 -- EX: SELECT COLUNAS FROM TABELA
 -- 	INSERT INTO TABELA (COLUNAS) VALUES (VALORES)
 -- 	DELETE FROM TABELA
--- 	UPDATE COLUNAS FROM TABELA
+-- 	UPDATE usuario SET nome_usuario= "Zezinho", email_usuario = "ze@gmail.com"
+--where id_usuario = 1;
