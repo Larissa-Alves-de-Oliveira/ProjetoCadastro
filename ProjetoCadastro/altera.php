@@ -14,9 +14,11 @@
     <title>Alterar Cadastro</title>
 </head>
 <body>
-    <form action="altera.php" method="post">
+    <form action="altera_usuario_exe.php" method="post">
         <fieldset>
             <legend>Cadastro de usuários - IFSP</legend>
+            <input name="id_usuario" type="hidden"
+                value="<?php echo $row['id_usuario'] ?>">;
             <div>
                 <label for="nome">Nome:</label>
     
