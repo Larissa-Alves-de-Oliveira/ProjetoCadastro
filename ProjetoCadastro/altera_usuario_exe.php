@@ -22,3 +22,4 @@
     else
         echo "Erro ao alterar dados: $msqli_erro($con)"
 ?>
+<a href="index.php">Voltar</a>
