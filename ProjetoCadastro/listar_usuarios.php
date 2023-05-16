@@ -23,6 +23,7 @@
             <th>Nome</th>
             <th>Email</th>
             <th>Telefone</th>
+            <th>Altera</th>
         </tr>
         <?php
             do{
@@ -31,10 +32,11 @@
                 echo "<td>".$row['nome_usuario']."</td>";
                 echo "<td>".$row['email_usuario']."</td>";
                 echo "<td>".$row['fone_usuario']."</td>";
+                echo "<td><a href='altera.php?id_usuario=" .$row['id_usuario']. "'>Alterar</a></td>";
                 echo "</tr>";
             }while($row =mysqli_fetch_array($result));
         ?>
-         <a href=""></a>;
+         <a href="index.php">Voltar</a>
     </table>
 </body>
 </html>

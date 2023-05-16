@@ -1,7 +1,7 @@
 <?php
     include('conexao.php');
     $id_usuario = $_GET['id_usuario'];
-    $sql = "SELECT *FROM usuario where id_usuario=$id_usuario";
+    $sql = "SELECT * FROM usuario where id_usuario=$id_usuario";
     $result = mysqli_query($con,$sql);
     $row = mysqli_fetch_array($result);
 ?>
