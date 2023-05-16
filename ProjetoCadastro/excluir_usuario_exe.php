@@ -9,5 +9,6 @@
     if($result)
         echo "Dados excluídos com sucesso!<br>";
     else
-        echo "Erro ao excluir dados: $msqli_erro($con)"
+        echo "Erro ao excluir dados: $msqli_erro($con)";
 ?>
+<a href="index.php">Voltar</a>
