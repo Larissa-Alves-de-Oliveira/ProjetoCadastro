@@ -20,6 +20,7 @@
     <table align="center" border="1" width="500">
         <tr>
             <th>Código</th>
+            <th>Imagem</th>
             <th>Nome</th>
             <th>Email</th>
             <th>Telefone</th>
@@ -28,14 +29,22 @@
         </tr>
         <?php
             do{
-                echo "<tr>";
-                echo "<td>".$row['id_usuario']."</td>";
-                echo "<td>".$row['nome_usuario']."</td>";
-                echo "<td>".$row['email_usuario']."</td>";
-                echo "<td>".$row['fone_usuario']."</td>";
-                echo "<td><a href='altera.php?id_usuario=" .$row['id_usuario']. "'>Alterar</a></td>";
-                echo "<td><a href='excluir_usuario_exe.php?id_usuario=" .$row['id_usuario']. "'>Deletar</a></td>";
-                echo "</tr>";
+                if($row)
+                {
+                    echo "<tr>";
+                    echo "<td>".$row['id_usuario']."</td>";
+                    if($row['foto'] == "")
+                        echo "<td></td>";
+                    else
+                        echo "<td><img src = '".$row['foto'].
+                        "' width = '80' height='100'/></td>";
+                    echo "<td>".$row['nome_usuario']."</td>";
+                    echo "<td>".$row['email_usuario']."</td>";
+                    echo "<td>".$row['fone_usuario']."</td>";
+                    echo "<td><a href='altera.php?id_usuario=" .$row['id_usuario']. "'>Alterar</a></td>";
+                    echo "<td><a href='excluir_usuario_exe.php?id_usuario=" .$row['id_usuario']. "'>Deletar</a></td>";
+                    echo "</tr>";
+                }
             }while($row =mysqli_fetch_array($result));
         ?>
          <a href="index.php">Voltar</a>

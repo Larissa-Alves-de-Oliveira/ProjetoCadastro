@@ -7,7 +7,7 @@
     <title>Cadastro usuario</title>
 </head>
 <body>
-    <form action="cadastro_usuario.php" method="post">
+    <form action="cadastro_usuario.php" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Cadastro de usuários - IFSP</legend>
             <div>
@@ -29,8 +29,10 @@
                 <label for="senha">Senha:</label>
     
                 <input type="password" name="senha" id="senha" required><br><br>
+          
+                <input type="file" name="foto" id="foto" accept="image/*">
             </div>
-            <button type="submit">Salvar</button>
+            <input type="submit" value="Salvar">
         </fieldset>
     </form>
 

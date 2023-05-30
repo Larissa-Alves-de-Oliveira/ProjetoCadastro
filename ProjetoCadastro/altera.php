@@ -14,7 +14,7 @@
     <title>Alterar Cadastro</title>
 </head>
 <body>
-    <form action="altera_usuario_exe.php" method="post">
+    <form action="altera_usuario_exe.php" method="post" enctype="multipart/form-data">
         <fieldset>
             <legend>Cadastro de usuários - IFSP</legend>
             <input name="id_usuario" type="hidden"
@@ -43,6 +43,7 @@
                 <input type="password" name="senha" id="senha"
                 value="<?php echo $row['senha']?>">
             </div>
+            <input type="file" name="foto" id="foto" accept="image/*">
             <button type="submit">Salvar</button>
         </fieldset>
     </form>
